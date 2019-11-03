@@ -134,23 +134,23 @@ var darkness, darkness2, waterDarkness;
 
 //Load all of the images used in the game
 function preload() {
-	testing = loadImage("test_image.png");
-	smiley = loadImage("smiley.png");
-	crystal = loadImage("crystal.png");
-	crystalGroup = loadImage("crystal_group2.png");
-	crystalGroupWater = loadImage("crystal_group_water.png");
-	crystalWater = loadImage("crystal_water.png");
-	darkness = loadImage("darkness1.png");
-	darkness2 = loadImage("darkness2.png");
-	waterDarkness = loadImage("water_darkness.png");
+	testing = loadImage("test_image.png", pic => print(pic), loadImgErrFix);
+	smiley = loadImage("smiley.png", pic => print(pic), loadImgErrFix);
+	crystal = loadImage("crystal.png", pic => print(pic), loadImgErrFix);
+	crystalGroup = loadImage("crystal_group2.png", pic => print(pic), loadImgErrFix);
+	crystalGroupWater = loadImage("crystal_group_water.png", pic => print(pic), loadImgErrFix);
+	crystalWater = loadImage("crystal_water.png", pic => print(pic), loadImgErrFix);
+	darkness = loadImage("darkness1.png", pic => print(pic), loadImgErrFix);
+	darkness2 = loadImage("darkness2.png", pic => print(pic), loadImgErrFix);
+	waterDarkness = loadImage("water_darkness.png", pic => print(pic), loadImgErrFix);
 	
 	//Load the water crystal group images. They each need to load their own so that manipulating one won't affect the others.
 	for (var i = 0; i < 23; i++) {
-		crystalImages[i] = loadImage("crystal_group_water.png"/*, pic => print(pic), loadImgErrFix*/);
+		crystalImages[i] = loadImage("crystal_group_water.png", pic => print(pic), loadImgErrFix);
 	}
 	//Load the water crystal images. They each need to load their own so that manipulating one won't affect the others.
 	for (var i = 0; i < 8; i++) {
-		singleCrystalImages[i] = loadImage("crystal_water.png"/*, pic => print(pic), loadImgErrFix*/);
+		singleCrystalImages[i] = loadImage("crystal_water.png", pic => print(pic), loadImgErrFix);
 	}
 }
 
