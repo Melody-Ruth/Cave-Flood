@@ -1,6 +1,6 @@
 /*function preload() {
 	crystal = loadImage("crystal.png", pic => print(pic));
-};/
+};*/
 
 function setup() {
 	createCanvas(600,600);
