@@ -134,8 +134,6 @@ var darkness, darkness2, waterDarkness;
 
 //Load all of the images used in the game
 function preload() {
-	testing = loadImage("test_image.png", pic => print(pic), loadImgErrFix);
-	smiley = loadImage("smiley.png", pic => print(pic), loadImgErrFix);
 	crystal = loadImage("crystal.png", pic => print(pic), loadImgErrFix);
 	crystalGroup = loadImage("crystal_group2.png", pic => print(pic), loadImgErrFix);
 	crystalGroupWater = loadImage("crystal_group_water.png", pic => print(pic), loadImgErrFix);
